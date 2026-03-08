@@ -2,7 +2,7 @@
 
 Medical Lab Test Reference Ranges - A sleek, mobile-first web application for quickly referencing common medical laboratory test ranges, including clinical indications for high and low results.
 
-![LabRef Screenshot Placeholder](#assets/labref-screenshot.webp)
+![LabRef Screenshot Placeholder](images/labref-screenshot.webp)
 
 ## Features
 - **Instant Search**: Search test names and filter in real-time as you type.
