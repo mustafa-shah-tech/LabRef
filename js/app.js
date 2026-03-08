@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterAndRender() {
         const filteredTests = labTests.filter(test => {
             const matchesCategory = currentCategory === 'All' || test.category === currentCategory;
-            const matchesSearch = test.name.toLowerCase().includes(searchQuery);
+            const matchesSearch = test.name.toLowerCase().includes(searchQuery) ||
+                (test.aliases && test.aliases.some(alias => alias.toLowerCase().includes(searchQuery)));
             return matchesCategory && matchesSearch;
         });
 

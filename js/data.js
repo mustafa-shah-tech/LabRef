@@ -7,7 +7,8 @@ const labTests = [
         female: "12.0-15.5",
         unit: "g/dL",
         high: "Polycythemia, dehydration",
-        low: "Anemia, blood loss, nutritional deficiency"
+        low: "Anemia, blood loss, nutritional deficiency",
+        aliases: ["Hgb", "Hb", "HGB"]
     },
     {
         name: "WBC (White Blood Cells)",
@@ -16,7 +17,8 @@ const labTests = [
         female: "4.5-11.0",
         unit: "x10³/µL",
         high: "Infection, inflammation, leukemia",
-        low: "Bone marrow suppression, viral infection"
+        low: "Bone marrow suppression, viral infection",
+        aliases: ["WBC", "TLC", "Total Leukocyte Count", "White Blood Count", "Leukocyte Count"]
     },
     {
         name: "Platelets",
@@ -25,7 +27,8 @@ const labTests = [
         female: "150-400",
         unit: "x10³/µL",
         high: "Thrombocytosis, inflammation",
-        low: "Bleeding risk, ITP, bone marrow disorder"
+        low: "Bleeding risk, ITP, bone marrow disorder",
+        aliases: ["PLT", "Platelet Count", "Thrombocytes", "PC"]
     },
     {
         name: "RBC (Red Blood Cells)",
@@ -34,7 +37,8 @@ const labTests = [
         female: "4.0-5.2",
         unit: "x10⁶/µL",
         high: "Polycythemia, dehydration",
-        low: "Anemia, hemorrhage"
+        low: "Anemia, hemorrhage",
+        aliases: ["RBC", "Red Blood Count", "Erythrocyte Count", "TRC"]
     },
     {
         name: "Hematocrit (HCT)",
@@ -43,7 +47,8 @@ const labTests = [
         female: "36-46",
         unit: "%",
         high: "Dehydration, polycythemia",
-        low: "Anemia, overhydration"
+        low: "Anemia, overhydration",
+        aliases: ["HCT", "Hct", "PCV", "Packed Cell Volume"]
     },
     {
         name: "MCV (Mean Corpuscular Volume)",
@@ -52,7 +57,8 @@ const labTests = [
         female: "80-100",
         unit: "fL",
         high: "B12/folate deficiency, liver disease",
-        low: "Iron deficiency anemia, thalassemia"
+        low: "Iron deficiency anemia, thalassemia",
+        aliases: ["MCV", "Mean Cell Volume"]
     },
     {
         name: "Neutrophils",
@@ -61,7 +67,8 @@ const labTests = [
         female: "40-70",
         unit: "%",
         high: "Bacterial infection, stress, steroids",
-        low: "Viral infection, chemotherapy"
+        low: "Viral infection, chemotherapy",
+        aliases: ["PMN", "Polys", "Segs", "Granulocytes", "Polymorphonuclear"]
     },
     {
         name: "Lymphocytes",
@@ -70,7 +77,8 @@ const labTests = [
         female: "20-40",
         unit: "%",
         high: "Viral infection, lymphoma",
-        low: "HIV, immunodeficiency, steroids"
+        low: "HIV, immunodeficiency, steroids",
+        aliases: ["Lymphs", "Lymphocyte Count"]
     },
 
     // BIOCHEMISTRY
@@ -81,7 +89,8 @@ const labTests = [
         female: "70-100",
         unit: "mg/dL",
         high: "Diabetes mellitus, stress hyperglycemia",
-        low: "Hypoglycemia, insulin overdose"
+        low: "Hypoglycemia, insulin overdose",
+        aliases: ["FBS", "FBG", "RBS", "Blood Sugar", "Blood Glucose", "Sugar"]
     },
     {
         name: "HbA1c",
@@ -90,7 +99,8 @@ const labTests = [
         female: "<5.7",
         unit: "%",
         high: "Poorly controlled diabetes",
-        low: "Hemolytic anemia, recent blood loss"
+        low: "Hemolytic anemia, recent blood loss",
+        aliases: ["A1c", "A1C", "Glycated Hemoglobin", "Glycosylated Hemoglobin", "Hemoglobin A1c"]
     },
     {
         name: "Total Cholesterol",
@@ -99,7 +109,8 @@ const labTests = [
         female: "<200",
         unit: "mg/dL",
         high: "Cardiovascular disease risk",
-        low: "Malnutrition, hyperthyroidism"
+        low: "Malnutrition, hyperthyroidism",
+        aliases: ["TC", "Chol", "Cholesterol"]
     },
     {
         name: "LDL Cholesterol",
@@ -108,7 +119,8 @@ const labTests = [
         female: "<100",
         unit: "mg/dL",
         high: "Atherosclerosis risk",
-        low: "Malnutrition, liver disease"
+        low: "Malnutrition, liver disease",
+        aliases: ["LDL", "LDL-C", "Bad Cholesterol", "Low Density Lipoprotein"]
     },
     {
         name: "HDL Cholesterol",
@@ -117,7 +129,8 @@ const labTests = [
         female: ">50",
         unit: "mg/dL",
         high: "Cardioprotective",
-        low: "Cardiovascular disease risk"
+        low: "Cardiovascular disease risk",
+        aliases: ["HDL", "HDL-C", "Good Cholesterol", "High Density Lipoprotein"]
     },
     {
         name: "Triglycerides",
@@ -126,7 +139,8 @@ const labTests = [
         female: "<150",
         unit: "mg/dL",
         high: "Pancreatitis, metabolic syndrome",
-        low: "Malnutrition, hyperthyroidism"
+        low: "Malnutrition, hyperthyroidism",
+        aliases: ["TG", "TGs", "TRIG", "Trigs"]
     },
     {
         name: "Sodium (Na)",
@@ -135,7 +149,8 @@ const labTests = [
         female: "136-145",
         unit: "mEq/L",
         high: "Dehydration, diabetes insipidus",
-        low: "Heart failure, SIADH, excess water"
+        low: "Heart failure, SIADH, excess water",
+        aliases: ["Na", "Serum Sodium"]
     },
     {
         name: "Potassium (K)",
@@ -144,7 +159,8 @@ const labTests = [
         female: "3.5-5.0",
         unit: "mEq/L",
         high: "Renal failure, acidosis",
-        low: "Diarrhea, vomiting, diuretics"
+        low: "Diarrhea, vomiting, diuretics",
+        aliases: ["K", "Serum Potassium"]
     },
 
     // LIVER (LFT)
@@ -155,7 +171,8 @@ const labTests = [
         female: "7-45",
         unit: "U/L",
         high: "Liver damage, hepatitis, fatty liver",
-        low: "Not clinically significant"
+        low: "Not clinically significant",
+        aliases: ["GPT", "SGPT", "Alanine Transaminase", "Liver Enzyme"]
     },
     {
         name: "AST (Aspartate Aminotransferase)",
@@ -164,7 +181,8 @@ const labTests = [
         female: "10-35",
         unit: "U/L",
         high: "Liver disease, heart attack, muscle damage",
-        low: "Not clinically significant"
+        low: "Not clinically significant",
+        aliases: ["GOT", "SGOT", "Aspartate Transaminase"]
     },
     {
         name: "Total Bilirubin",
@@ -173,7 +191,8 @@ const labTests = [
         female: "0.1-1.2",
         unit: "mg/dL",
         high: "Jaundice, liver disease, hemolysis",
-        low: "Not clinically significant"
+        low: "Not clinically significant",
+        aliases: ["TBil", "TBIL", "T-Bili", "T.Bili", "Bilirubin"]
     },
     {
         name: "Direct Bilirubin",
@@ -182,7 +201,8 @@ const labTests = [
         female: "0.0-0.3",
         unit: "mg/dL",
         high: "Obstructive jaundice, hepatitis",
-        low: "Not clinically significant"
+        low: "Not clinically significant",
+        aliases: ["DBil", "DBIL", "D-Bili", "Conjugated Bilirubin"]
     },
     {
         name: "Albumin",
@@ -191,7 +211,8 @@ const labTests = [
         female: "3.5-5.0",
         unit: "g/dL",
         high: "Dehydration",
-        low: "Liver disease, malnutrition, nephrotic syndrome"
+        low: "Liver disease, malnutrition, nephrotic syndrome",
+        aliases: ["Alb", "Serum Albumin"]
     },
     {
         name: "ALP (Alkaline Phosphatase)",
@@ -200,7 +221,8 @@ const labTests = [
         female: "44-147",
         unit: "U/L",
         high: "Liver disease, bone disorders",
-        low: "Hypothyroidism, pernicious anemia"
+        low: "Hypothyroidism, pernicious anemia",
+        aliases: ["Alk Phos", "Alkaline Phosphatase", "ALKP"]
     },
 
     // KIDNEY (RFT)
@@ -211,7 +233,8 @@ const labTests = [
         female: "0.5-1.1",
         unit: "mg/dL",
         high: "Kidney disease, dehydration, muscle breakdown",
-        low: "Low muscle mass, pregnancy"
+        low: "Low muscle mass, pregnancy",
+        aliases: ["Cr", "Creat", "SCr", "Serum Creatinine"]
     },
     {
         name: "Blood Urea Nitrogen (BUN)",
@@ -220,7 +243,8 @@ const labTests = [
         female: "7-20",
         unit: "mg/dL",
         high: "Kidney disease, dehydration, high protein diet",
-        low: "Liver failure, malnutrition"
+        low: "Liver failure, malnutrition",
+        aliases: ["BUN", "Urea", "Blood Urea", "Serum Urea"]
     },
     {
         name: "Uric Acid",
@@ -229,7 +253,8 @@ const labTests = [
         female: "2.4-6.0",
         unit: "mg/dL",
         high: "Gout, kidney disease, leukemia",
-        low: "Wilson's disease, SIADH"
+        low: "Wilson's disease, SIADH",
+        aliases: ["UA", "Urate", "Serum Uric Acid"]
     },
     {
         name: "eGFR",
@@ -238,7 +263,8 @@ const labTests = [
         female: ">60",
         unit: "mL/min/1.73m²",
         high: "Not applicable",
-        low: "Chronic kidney disease indicator"
+        low: "Chronic kidney disease indicator",
+        aliases: ["GFR", "Glomerular Filtration Rate", "Kidney Function"]
     },
 
     // THYROID
@@ -249,7 +275,8 @@ const labTests = [
         female: "0.4-4.0",
         unit: "mIU/L",
         high: "Hypothyroidism",
-        low: "Hyperthyroidism, pituitary dysfunction"
+        low: "Hyperthyroidism, pituitary dysfunction",
+        aliases: ["Thyrotropin", "Thyroid Stimulating Hormone"]
     },
     {
         name: "Free T4 (Thyroxine)",
@@ -258,7 +285,8 @@ const labTests = [
         female: "0.8-1.8",
         unit: "ng/dL",
         high: "Hyperthyroidism, thyroiditis",
-        low: "Hypothyroidism, pituitary disorder"
+        low: "Hypothyroidism, pituitary disorder",
+        aliases: ["FT4", "fT4", "Free Thyroxine", "T4"]
     },
     {
         name: "Free T3 (Triiodothyronine)",
@@ -267,7 +295,8 @@ const labTests = [
         female: "2.3-4.2",
         unit: "pg/mL",
         high: "Hyperthyroidism, T3 toxicosis",
-        low: "Hypothyroidism, severe illness"
+        low: "Hypothyroidism, severe illness",
+        aliases: ["FT3", "fT3", "Free Triiodothyronine", "T3"]
     },
     {
         name: "Anti-TPO Antibodies",
@@ -276,6 +305,7 @@ const labTests = [
         female: "<35",
         unit: "IU/mL",
         high: "Hashimoto's thyroiditis, Graves' disease",
-        low: "Not clinically significant"
+        low: "Not clinically significant",
+        aliases: ["TPO", "Anti-TPO", "TPO Ab", "Thyroid Peroxidase Antibody"]
     }
 ];
